@@ -11,7 +11,6 @@ pipeline {
         stage('Build'){
               steps {
                 bat 'mvn clean instal'
-                junit '**/target/surefire-reports/TEST-*.xml'
                 archiveArtifacts 'target/*.jar'
             }
         }
