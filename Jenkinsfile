@@ -8,12 +8,6 @@ pipeline {
                 git 'https://github.com/SammLopes/Jenkins.git'
             }
         }
-        
-        stage('Teste'){
-            bat 'mvn test'
-            
-        }
-        
         stage('Build'){
               steps {
                 bat 'mvn clean instal'
